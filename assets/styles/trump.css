@@ -1,0 +1,76 @@
+.trump-article .article-main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.trump-article .twitter{
+    margin: 20px auto;
+    max-width: 600px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Heading Styles */
+.trump-article .article-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.trump-article .article-content p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+
+.trump-article .subtitle {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.trump-article .article-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+/* Article Image */
+.trump-article .article-image img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Container styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: left; 
+    margin: 20px;
+}
+
+/* Icon styling */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FAD02E; /* Yellow color */
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}

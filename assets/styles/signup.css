@@ -1,0 +1,214 @@
+/* Centering the entire page content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* margin: 0; */
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9f9f9;
+    flex-direction: column;
+}
+
+
+/* Container styling */
+.container {
+    max-width: 650px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    /* background: #fff; */
+    border-radius: 8px;
+    /* flex: 1; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+  }
+
+
+/* Heading and Subheading */
+.container h1 {
+    font-size: 2em;
+    color: rgb(66, 107, 31);
+    margin-bottom: 10px;
+}
+
+
+.container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+
+/* Label for email */
+form label {
+    align-self: flex-start;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+/* Input field styling */
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+/* Continue button styling */
+.continue-button {
+    width: 100%; /* Full width button */
+    padding: 12px 0;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+
+/* Optional: Hover effect for button */
+.continue-button:hover {
+    background-color: #333;
+}
+
+
+
+button:hover {
+    background-color: #333;
+}
+
+
+/* Divider styling */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.divider::before {
+    margin-right: 0.5em;
+}
+
+.divider::after {
+    margin-left: 0.5em;
+}
+
+/* Terms and conditions */
+.terms {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.terms a {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Social login buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: #333;
+}
+
+.social-login button img {
+    width: 20px; /* Consistent width for all icons */
+    height: 20px; /* Consistent height for all icons */
+    margin-right: 10px; /* Space between icon and text */
+    object-fit: contain;
+}
+
+.social-login button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer styling */
+/* .footer {
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #888;
+} */
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top:100px;
+}
+/* Responsive Styles */
+@media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .continue-button, .social-login button {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  }
